@@ -1,0 +1,4 @@
+Derived from moutansos/opencode2-cliproxyapi v0.4.2, commit e8f7db0a0fb9139515345b4ca13dc9e585804ab5.
+The upstream MIT license and copyright notices are preserved.
+
+Additional functionality: native server URL/API-key authentication, scoped model discovery, unified model names, session affinity, quota UI, and an optional read-only server companion.

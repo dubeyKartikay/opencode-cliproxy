@@ -1,0 +1,12 @@
+node_modules/
+.test-tmp/
+*.log
+.DS_Store
+.env
+.env.*
+*VERIFICATION*.json
+*CHECK*.json
+credentials*.json
+**/client-credentials.json
+releases/
+dist/*.d.ts

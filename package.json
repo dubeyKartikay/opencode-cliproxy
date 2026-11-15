@@ -1,0 +1,51 @@
+{
+  "name": "opencode-cliproxy",
+  "version": "2.0.1",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "CLIProxy integration for OpenCode: native URL/key authentication, unified models and read-only quotas",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dubeyKartikay/opencode-cliproxy.git"
+  },
+  "homepage": "https://github.com/dubeyKartikay/opencode-cliproxy#readme",
+  "bugs": {
+    "url": "https://github.com/dubeyKartikay/opencode-cliproxy/issues"
+  },
+  "main": "./dist/server.js",
+  "exports": {
+    ".": "./dist/server.js",
+    "./server": "./dist/server.js",
+    "./tui": "./dist/tui.js",
+    "./rpc": "./dist/rpc.js"
+  },
+  "files": [
+    "dist/server.js",
+    "dist/tui.js",
+    "dist/rpc.js",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "peerDependencies": {
+    "@opencode/plugin": ">=2.2.7"
+  },
+  "peerDependenciesMeta": {
+    "@opencode/plugin": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@opencode/plugin": "2.2.7",
+    "@types/bun": "^1.3.5",
+    "bun": "1.4.4",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/test.mjs",
+    "check": "npm run typecheck && npm test && npm run build"
+  }
+}
